@@ -22,9 +22,7 @@
 - [🧩 Hugging Face Ecosystem — Dev Quick Picks](#-hugging-face-ecosystem--dev-quick-picks)
 - [What’s Inside](#whats-inside)
 - [Quick Start](#quick-start)
-- [🧾 Vision OCR Guide](notebooks/vision/OCR_models.md)
-- [🎨 Vision Text-to-Image Guide](notebooks/vision/text2image_models.md)
-
+- [🧾 AI Modalities](#ai-modalities)
 ## 🧩 Hugging Face Ecosystem — Dev Quick Picks
 <br>
 <sup>Opinionated, regularly used pieces that pair well with 🤗. Links go to official docs where possible.</sup>
@@ -55,14 +53,21 @@
 
 How to suggest a library: [open an issue](https://github.com/SSusantAchary/HuggingFace-HandsOn-Cookbook/issues/new?template=01-suggest-ecosystem-library.md).
 
-
 ---
 
-### What's Inside
-- Curated notebook gallery across NLP, vision, audio, multimodal, and serving tasks.
-- Single-source benchmark matrix (`benchmarks/matrix.csv`) + lightweight charts.
-- Fixes & Tips index (symptom → fix → verify → scope) for common Hugging Face hurdles.
-- MkDocs-powered docs site for quick navigation and sharing.
+
+# AI Modalities (Click to Explore)
+
+<div align="center">
+
+| Vision 🖼️ | Audio 🔊 | Text 📝 | Multimodal 🌐 |
+|:-----------:|:---------:|:-------:|:-------------:|
+| <a href="notebooks/vision/vision_catalog.md"><img src="assets/anime_icon/vision.png" alt="Vision modality icon" width="120" height="120"></a> | <a href="notebooks/audio/audio_catalog.md"><img src="assets/anime_icon/audio.png" alt="Audio modality icon" width="120" height="120"></a> | <a href="notebooks/nlp/nlp_catalog.md"><img src="assets/anime_icon/text.png" alt="Text modality icon" width="120" height="120"></a> | <a href="notebooks/multimodal/multimodal_catalog.md"><img src="assets/anime_icon/multimodal.png" alt="Multimodal modality icon" width="120" height="120"></a> |
+| 🛰️ Document OCR, layout analysis, zero-shot retrieval, grounding | 🎙️ Speech-to-text, diarization, tagging, captioning | 🧠 Instruction tuning, summarization, retrieval QA | 🤖 Cross-modal alignment, captioning, VQA, agentic flows |
+
+</div>
+
+---
 
 ### Quick Start
 ```bash
@@ -73,21 +78,21 @@ pip install -r notebooks/requirements-minimal.txt
 ```
 Open any notebook from `/notebooks` in Jupyter, VS Code, or Colab (badges inside each file).
 
-## 🔍 Vision OCR Highlights
+## 🔍 Popular Vision OCR Highlights
 - 🧾 **Trending models dashboard** → Dive into [Vision OCR Guide](notebooks/vision/OCR_models.md) for the latest `ocr` search snapshot, curated prompts, and resource links.
 - 📒 **Nanonets-OCR2-3B** → Run the official [image2md cookbook](https://github.com/NanoNets/Nanonets-OCR2/blob/main/Nanonets-OCR2-Cookbook/image2md.ipynb) to turn PDFs into structured Markdown.
 - 🪄 **dots.ocr** → Launch the [Colab remote server notebook](https://github.com/rednote-hilab/dots.ocr/blob/master/demo/demo_colab_remote_server.ipynb) for layout-aware parsing with table/formula support.
-- 🌏 **Typhoon-OCR-7B** → Use the bilingual [Colab quick start](https://colab.research.google.com/drive/1z4Fm2BZnKcFIoWuyxzzIIIn8oI2GKl3r?usp=sharing) to process Thai/English documents.
+- 🌏 **Typhoon-OCR-7B** → Use the bilingual [Colab quick start](https://colab.research.google.com/drive/1z4Fm2BZnKcFIoWuyxzzIIIn8oI2GKl3r?usp=sharing) [![Google Colab](https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1z4Fm2BZnKcFIoWuyxzzIIIn8oI2GKl3r?usp=sharing) to process Thai/English documents.
 - 📚 **Manga OCR base** → Follow the CLI [usage guide](https://github.com/kha-white/manga-ocr/blob/master/README.md#usage) for vertical, furigana-rich Japanese text.
 
-## 🎨 Vision Text-to-Image Highlights
+## 🎨 Popular Vision Text-to-Image Highlights
 - ⚡ **SD Turbo** → See the [Diffusers quickstart](https://huggingface.co/docs/diffusers/using-diffusers/sd_turbo) for 2–4 step 512² renders; works on 6GB GPUs or 8GB unified VRAM (M-series).
-- 🖼️ **SDXL Base + Refiner** → Use the [SDXL text-to-image Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers_doc/en/pytorch/sdxl.ipynb) for photoreal 1024² generations (≥12GB GPU / 16GB unified).
-- 🌀 **FLUX.1 family** → Try the [FLUX CFG Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/flux_with_cfg.ipynb) for cinematic looks; expect 16–24GB VRAM or 24GB+ unified memory.
+- 🖼️ **SDXL Base + Refiner** → Use the [SDXL text-to-image Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers_doc/en/pytorch/sdxl.ipynb) [![Google Colab](https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers_doc/en/pytorch/sdxl.ipynb) for photoreal 1024² generations (≥12GB GPU / 16GB unified).
+- 🌀 **FLUX.1 family** → Try the [FLUX CFG Colab](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/flux_with_cfg.ipynb) [![Google Colab](https://img.shields.io/badge/Google%20Colab-%23F9A825.svg?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/huggingface/notebooks/blob/main/diffusers/flux_with_cfg.ipynb) for cinematic looks; expect 16–24GB VRAM or 24GB+ unified memory.
 - 🌐 **Qwen-Image Lightning** → Multilingual prompts via the [Qwen2-Image Space](https://huggingface.co/spaces/Qwen/Qwen2-Image); plan on ≥16GB VRAM or 20GB unified.
 - 🔡 **Stable Diffusion 3 Medium** → Follow the [SD3 pipeline docs](https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion_3) for better text rendering (≥18GB GPU / 32GB unified).
 
-## 📒 Notebook Catalog (80+ models)
+## 📒 Notebook Catalog (100+ models)
 Developer-ready shortlist of Hugging Face models we plan to ship as notebooks. Full catalog refreshes from `/meta/notebook_catalog.csv`.
 
 **Current coverage:** 100 models total  
@@ -138,18 +143,15 @@ Developer-ready shortlist of Hugging Face models we plan to ship as notebooks. F
 | **VISION** · [ResNet-50](https://huggingface.co/microsoft/resnet-50) | Classic classification transfer | torchvision, timm | CPU/GPU/MLX | 4–8GB |
 | **VISION** · [CLIP ViT-B LAION](https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K) | Zero-shot retrieval large corpus | transformers | CPU/GPU | 4–8GB |
 
-[View the full 100-model catalog →](./notebooks/catalog.md)
+[View the full 100+ models catalog →](./notebooks/catalog.md)
 <!-- CATALOG:END -->
 
 ### Who It's For
-- Practitioners who need reproducible, CPU-safe Hugging Face experiments.
+- Practitioners who need reproducible, CPU-GPU-MLX safe Hugging Face experiments.
 - Teams validating Metal or CUDA paths without breaking CPU workflows. (MLX Coming Shortly)
 - Contributors adding benchmarks, fixes, or doc polish with low friction.
 
 **Prereqs:** Python ≥3.10, git, and `pip`. GPU/Metal optional.
-
-### Fix of the Week
-- Metal backend fallback detection with CPU guidance – documented in `/fixes-and-tips/metal-backend-fallback.md`.
 
 ### Mini-benchmark of the Week
 - CLIP retrieval batch-size sweep scaffolding – see `/docs/benchmarks.md` and run the notebook to populate metrics.
@@ -157,8 +159,8 @@ Developer-ready shortlist of Hugging Face models we plan to ship as notebooks. F
 ### Cite & License
 ```
 @misc{hands-on-hf,
-  author    = {S. Susant Achary},
-  title     = {Hands-On Hugging Face AI Models},
+  author    = {S.Susant Achary},
+  title     = {HuggingFace-HandsOn-Cookbook},
   year      = {2025},
   howpublished = {\url{https://github.com/SSusantAchary/HuggingFace-HandsOn-Cookbook}}
 }
