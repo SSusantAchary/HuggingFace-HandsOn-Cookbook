@@ -156,6 +156,10 @@ Developer-ready shortlist of Hugging Face models we plan to ship as notebooks. F
 ### Mini-benchmark of the Week
 - CLIP retrieval batch-size sweep scaffolding – see `/docs/benchmarks.md` and run the notebook to populate metrics.
 
+### Credits
+- [🤗 PEFT](https://github.com/huggingface/peft) — foundational adapter research and tooling referenced across the fine-tuning notes.
+- [Unsloth Notebooks](https://docs.unsloth.ai/get-started/unsloth-notebooks) — high-efficiency Colab/Kaggle recipes linked throughout the PEFT/adapter cookbook.
+
 ### Cite & License
 ```
 @misc{hands-on-hf,
@@ -166,6 +170,10 @@ Developer-ready shortlist of Hugging Face models we plan to ship as notebooks. F
 }
 ```
 Licensed under the [Apache License 2.0](LICENSE).
+
+### Credits & Attributions
+- Parameter-efficient finetuning patterns draw on the excellent [PEFT library](https://huggingface.co/docs/peft/index) from Hugging Face.
+- Fast LoRA/DPO training inspiration and tooling credit to the [Unsloth project](https://github.com/unslothai/unsloth).
 
 ---
 
